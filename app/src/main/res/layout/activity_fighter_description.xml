@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.nero.ufcfighters.FighterDescription">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fighter_description_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/red">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UFC"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+             />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/fighter_description_nName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NICK NAME"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:scaleX="2"
+        android:scaleY="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/fighter_description_fName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First NAME"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/fighter_description_lName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last NAME"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/fighter_description_winCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/fighter_description_loseCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/fighter_description_drawCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="(W:L:D)"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fighter_description_profilePic"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profilepic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight class - "
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/fighter_description_wClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle Weighter"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank - "
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/fighter_description_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fighter_description_profileLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Profile on UFC.com"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>

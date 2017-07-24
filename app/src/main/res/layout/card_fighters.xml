@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_gradient">
+
+        <ImageView
+            android:id="@+id/card_fighter_pic"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/tyron"
+            android:scaleType="fitEnd"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/card_fighter_fName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="FIRSTname"/>
+
+                <TextView
+                    android:id="@+id/card_fighter_lName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="LASTname"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/card_fighter_nName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="NICKname"/>
+
+            <TextView
+                android:id="@+id/card_fighter_wClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:text="WEIGHTclass"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
